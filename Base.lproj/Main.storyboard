@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Inicio Sesion Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="InicioSesionController" customModule="NutriologoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HealthyFish" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQ1-lL-G9W">
+                                <rect key="frame" x="118" y="231" width="140" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3B-Mf-LrM">
+                                <rect key="frame" x="142" y="406" width="91" height="30"/>
+                                <state key="normal" title="Iniciar Sesión">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doTapEntrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dAu-J7-wUq"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6HP-gv-qoB">
+                                <rect key="frame" x="61" y="294" width="253" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fI2-rx-iDF">
+                                <rect key="frame" x="61" y="342" width="253" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No válido" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiX-Km-oq2">
+                                <rect key="frame" x="61" y="380" width="45" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="raw-fish" translatesAutoresizingMaskIntoConstraints="NO" id="kqo-b7-9pv">
+                                <rect key="frame" x="116" y="123" width="144" height="111"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="82005638-hand-drow-fish-background-cartoon-fish-background-stylized-hand-drawn-fish-wallpaper-fish-vector-fis" translatesAutoresizingMaskIntoConstraints="NO" id="ivu-5Z-a5b">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="tintColor" white="1" alpha="0.60236025528169013" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8313053111899219" green="0.97451025270365399" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kqo-b7-9pv" secondAttribute="trailing" constant="115" id="3Xj-cJ-eU0"/>
+                            <constraint firstItem="N3B-Mf-LrM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3sp-h3-9Tl"/>
+                            <constraint firstItem="jiX-Km-oq2" firstAttribute="top" secondItem="fI2-rx-iDF" secondAttribute="bottom" constant="8" id="AVw-Ng-Z09"/>
+                            <constraint firstItem="fI2-rx-iDF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="DMP-OY-bPT"/>
+                            <constraint firstItem="ivu-5Z-a5b" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Hph-nw-cW7"/>
+                            <constraint firstItem="fI2-rx-iDF" firstAttribute="top" secondItem="6HP-gv-qoB" secondAttribute="bottom" constant="18" id="KUF-z5-9Zv"/>
+                            <constraint firstItem="tQ1-lL-G9W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="Mhc-Uf-NKn"/>
+                            <constraint firstItem="ivu-5Z-a5b" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="N2O-Iu-hm5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6HP-gv-qoB" secondAttribute="trailing" constant="16" id="OX9-i3-e4i"/>
+                            <constraint firstItem="6HP-gv-qoB" firstAttribute="top" secondItem="kqo-b7-9pv" secondAttribute="bottom" constant="60" id="TbB-rh-ABd"/>
+                            <constraint firstItem="jiX-Km-oq2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="U0Q-69-K8D"/>
+                            <constraint firstItem="tQ1-lL-G9W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YDs-8E-wGa"/>
+                            <constraint firstItem="6HP-gv-qoB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="274" id="ZF3-iT-7ci"/>
+                            <constraint firstItem="kqo-b7-9pv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="ZnG-3V-DTJ"/>
+                            <constraint firstItem="ivu-5Z-a5b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bZ1-8d-hET"/>
+                            <constraint firstItem="tQ1-lL-G9W" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="211" id="cFu-xF-Shf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fI2-rx-iDF" secondAttribute="trailing" constant="16" id="d77-EK-0P0"/>
+                            <constraint firstItem="6HP-gv-qoB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dpz-K6-SHd"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="N3B-Mf-LrM" secondAttribute="bottom" constant="231" id="h9y-VY-7aZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tQ1-lL-G9W" secondAttribute="trailing" constant="117" id="nP0-yJ-c2Z"/>
+                            <constraint firstItem="kqo-b7-9pv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="103" id="qqn-4q-Y5e"/>
+                            <constraint firstItem="ivu-5Z-a5b" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wpt-b7-MEK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblAviso" destination="jiX-Km-oq2" id="XgX-Xj-KfS"/>
+                        <outlet property="txtContra" destination="fI2-rx-iDF" id="S1V-N2-1Vi"/>
+                        <outlet property="txtCorreo" destination="6HP-gv-qoB" id="Pcd-tv-4vr"/>
+                        <segue destination="VpM-d7-1m8" kind="show" identifier="goToEntrar" id="rCH-Uv-P9y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+        <!--Fecha Selector Controller-->
+        <scene sceneID="K9I-0R-pL8">
+            <objects>
+                <viewController id="VpM-d7-1m8" customClass="FechaSelectorController" customModule="NutriologoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5d6-Ba-7Xs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="82005638-hand-drow-fish-background-cartoon-fish-background-stylized-hand-drawn-fish-wallpaper-fish-vector-fis" translatesAutoresizingMaskIntoConstraints="NO" id="OoX-hZ-RUz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V65-k3-qqR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="157"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consulta la dieta del día" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RA8-UM-w9B">
+                                        <rect key="frame" x="10" y="66" width="355" height="83"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.64185817794478739" green="0.86627183860114243" blue="0.9004614637305699" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="RA8-UM-w9B" firstAttribute="top" secondItem="V65-k3-qqR" secondAttribute="top" constant="66" id="9wb-Hq-qyP"/>
+                                    <constraint firstItem="RA8-UM-w9B" firstAttribute="leading" secondItem="V65-k3-qqR" secondAttribute="leading" constant="10" id="BPk-FB-G8T"/>
+                                    <constraint firstAttribute="trailing" secondItem="RA8-UM-w9B" secondAttribute="trailing" constant="10" id="ghb-Vd-e9s"/>
+                                    <constraint firstAttribute="bottom" secondItem="RA8-UM-w9B" secondAttribute="bottom" constant="8" id="j9l-38-4Ll"/>
+                                    <constraint firstAttribute="height" constant="157" id="qHD-yD-WJt"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fecha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hso-js-zcx">
+                                <rect key="frame" x="58" y="189" width="259" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6l-Vb-YAw">
+                                <rect key="frame" x="292" y="617" width="67" height="30"/>
+                                <state key="normal" title="Consultar">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="doTapConsultar:" destination="VpM-d7-1m8" eventType="touchUpInside" id="7z7-1s-0M4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8634403129951076" green="0.98874997836838385" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Xt-7I-aTx" firstAttribute="bottom" secondItem="f6l-Vb-YAw" secondAttribute="bottom" constant="20" id="4ku-NK-q8M"/>
+                            <constraint firstItem="hso-js-zcx" firstAttribute="leading" secondItem="4Xt-7I-aTx" secondAttribute="leading" constant="58" id="5VV-Be-z01"/>
+                            <constraint firstItem="hso-js-zcx" firstAttribute="top" secondItem="V65-k3-qqR" secondAttribute="bottom" constant="32" id="Gt9-J4-f3b"/>
+                            <constraint firstItem="f6l-Vb-YAw" firstAttribute="top" secondItem="hso-js-zcx" secondAttribute="bottom" constant="398" id="S2G-J6-XRc"/>
+                            <constraint firstItem="4Xt-7I-aTx" firstAttribute="trailing" secondItem="f6l-Vb-YAw" secondAttribute="trailing" constant="16" id="TwE-dW-sIZ"/>
+                            <constraint firstItem="f6l-Vb-YAw" firstAttribute="top" secondItem="hso-js-zcx" secondAttribute="bottom" constant="398" id="U2I-x7-Kvz"/>
+                            <constraint firstItem="V65-k3-qqR" firstAttribute="top" secondItem="5d6-Ba-7Xs" secondAttribute="top" id="gOx-Iq-cR0"/>
+                            <constraint firstItem="V65-k3-qqR" firstAttribute="leading" secondItem="4Xt-7I-aTx" secondAttribute="leading" id="kSb-Ih-FFB"/>
+                            <constraint firstItem="f6l-Vb-YAw" firstAttribute="leading" secondItem="4Xt-7I-aTx" secondAttribute="leading" constant="292" id="n3l-jS-fIa"/>
+                            <constraint firstItem="V65-k3-qqR" firstAttribute="trailing" secondItem="4Xt-7I-aTx" secondAttribute="trailing" id="nuH-Eo-L3y"/>
+                            <constraint firstItem="4Xt-7I-aTx" firstAttribute="trailing" secondItem="hso-js-zcx" secondAttribute="trailing" constant="58" id="uiK-0y-y39"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Xt-7I-aTx"/>
+                    </view>
+                    <connections>
+                        <outlet property="txtFecha" destination="hso-js-zcx" id="jFi-1Z-gXa"/>
+                        <segue destination="PRN-26-V7h" kind="show" identifier="goToDieta" id="hok-uY-AYh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S4b-Pe-0eg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="917.60000000000002" y="117.39130434782609"/>
+        </scene>
+        <!--Dieta Detalle Controller-->
+        <scene sceneID="cbg-Fb-Awl">
+            <objects>
+                <viewController id="PRN-26-V7h" customClass="DietaDetalleController" customModule="NutriologoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JSy-Ez-gL5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="68E-sM-DOb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hhZ-Hn-6W5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1730" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="82005638-hand-drow-fish-background-cartoon-fish-background-stylized-hand-drawn-fish-wallpaper-fish-vector-fis" width="1300" height="1300"/>
+        <image name="raw-fish" width="512" height="512"/>
+    </resources>
+</document>
